@@ -1,0 +1,85 @@
+ .post-header {
+            padding: 48px 0 32px;
+            border-bottom: 1px solid var(--bordo);
+            margin-bottom: 40px;
+        }
+
+        .post-tag {
+            font-size: 0.72rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accento-primario);
+            font-weight: 500;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .post-header h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            line-height: 1.2;
+            margin: 0 0 16px;
+            color: var(--testo);
+        }
+
+        .post-meta {
+            font-size: 0.82rem;
+            color: var(--testo-secondario);
+            display: flex;
+            gap: 16px;
+        }
+
+        .post-cover {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        .post-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 8px;
+            margin: 32px 0;
+        }
+
+        .post-gallery img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .post-body {
+            max-width: 640px;
+        }
+
+        .post-body p {
+            font-size: 1rem;
+            line-height: 1.85;
+            color: var(--testo-secondario);
+            margin: 0 0 24px;
+        }
+
+        .post-body h2 {
+            font-size: 1.25rem;
+            margin: 40px 0 12px;
+            color: var(--testo);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            color: var(--accento-primario);
+            text-decoration: none;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }

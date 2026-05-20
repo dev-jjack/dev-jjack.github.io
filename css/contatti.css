@@ -1,0 +1,32 @@
+#ws{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+#ws-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+p{
+    display: flex;
+    align-items: center;
+}
+
+.contact-note p {
+    font-size: 0.88rem;
+    color: var(--testo-secondario);
+    line-height: 1.75;
+    font-style: italic;
+    margin: 0 0 4px;
+}
+
+.contact-note p + p {
+    font-style: normal;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.6;
+}

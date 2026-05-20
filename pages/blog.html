@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Giacomo Gorini</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1><a id="home" href="index.html">Giacomo Gorini</a></h1>
+            <h4>Sviluppatore frontend in formazione</h4>
+        </div>
+        <ul>
+            <li><a class="link" href="contatti.html">CONTATTI</a></li>
+            <li><a class="link" href="skills.html">SKILLS</a></li>
+             <li><a class="link" href="index.html">HOME</a></li>
+        </ul>
+    </header>
+
+    <div id="wrapper">
+        <main>
+            <div id="blog-intro">
+                <h2>Blog</h2>
+                <p>Pensieri, Obbiettivi e aggiornamenti del mio percorso.</p>
+            </div>
+            <div id="blog-grid">
+            </div>
+        </main>
+    </div>
+
+    <div id="modal-overlay">
+        <div id="modal-box">
+            <div id="modal-carousel">
+                <button class="carousel-btn" id="btn-prev">&#8592;</button>
+                <button class="carousel-btn" id="btn-next">&#8594;</button>
+                <div class="carousel-dots" id="modal-dots"></div>
+            </div>
+            <div id="modal-content">
+                <button id="modal-close">&#10005;</button>
+                <h2 id="modal-title"></h2>
+                <span id="modal-date"></span>
+                <p id="modal-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>Giacomo Gorini — <time datetime="2026">2026</time></span>
+    </footer>
+
+    <script src="../js/blog.js" defer></script>
+</body>
+</html>

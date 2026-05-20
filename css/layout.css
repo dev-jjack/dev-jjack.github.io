@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700&family=Instrument+Sans:wght@400;500&display=swap');
+
+:root {
+    --sfondo: #f7f9f4;
+    --accento-primario: #2d6a1f;
+    --accento-hover: #ffffff;
+    --testo: #111827;
+    --testo-secondario: #6B7280;
+    --bordo: rgba(45, 106, 31, 0.15);
+    --header-h: 72px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sfondo);
+    font-family: 'Instrument Sans', sans-serif;
+    color: var(--testo);
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accento-primario);
+    padding: 10px 60px;
+    height: var(--header-h);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.12);
+}
+
+header > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    color: var(--accento-hover);
+}
+
+header > div h1,
+header > div h4 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+h1 {
+    color: var(--accento-hover);
+    font-family: 'Syne', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+header > div h4 {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+
+header > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header > ul a {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+header > ul a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1.5px;
+    background-color: #ffffff;
+    transition: width 0.2s ease;
+}
+
+header > ul a:hover {
+    color: #ffffff;
+}
+
+header > ul a:hover::after {
+    width: 100%;
+}
+
+
+#home {
+    text-decoration: none;
+    color: var(--accento-hover);
+    transition: opacity 0.2s ease;
+}
+
+#home:hover {
+    opacity: 0.85;
+}
+
+
+#wrapper {
+    flex: 1;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 24px;
+}
+
+
+
+footer {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accento-primario);
+    color: rgba(255,255,255,0.7);
+    padding: 20px 48px;
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer>h2{
+    font-family: 'Syne', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accento-hover);
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--testo);
+    margin-bottom: 8px;
+}
+
+p, li {
+    color: var(--testo-secondario);
+    line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+    header {
+        padding: 0 20px;
+    }
+
+    header > ul {
+        gap: 18px;
+    }
+
+    header > div h1 {
+        font-size: 1.1rem;
+    }
+
+    #wrapper {
+        padding: 36px 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px;
+        text-align: center;
+    }
+}
