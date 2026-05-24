@@ -187,8 +187,7 @@
         }
 
         .dot.active { background: #fff; }
-
-        /* testo modale */
+        
         #modal-content {
             flex: 1;
             overflow-y: auto;
