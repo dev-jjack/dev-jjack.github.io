@@ -17,7 +17,7 @@ const posts = [
                 title:"Il mio primo sito per una azienda",
                 date:"2026-07-30",
                 excerpt:"Ho creato su commissione il mio primo sito per una azienda, un sito multipagina con form,map,carrosello foto e una grafica accativante",
-                cover: {src:"..img/foto-sito-rid.png"},
+                cover: {src:"../img/foto-sito-rid.png"},
                 photos: ["../img/foto-sito-rid.png"]
             },
         ];
